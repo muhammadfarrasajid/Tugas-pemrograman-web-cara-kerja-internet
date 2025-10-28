@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Kerja Internet - Beranda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cara Kerja Internet 🌐</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Beranda (Umum)</a></li>
+            <li><a href="http.html">HTTP & HTTPS</a></li>
+            <li><a href="domain.html">Nama Domain</a></li>
+            <li><a href="hosting.html">Hosting</a></li>
+            <li><a href="dns.html">DNS</a></li>
+            <li><a href="browser.html">Browser</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Bagaimana Internet Bekerja Secara Umum?</h2>
+        <p>
+            Internet adalah jaringan komputer global yang saling terhubung, memungkinkan perangkat di seluruh dunia untuk berkomunikasi dan berbagi informasi. Ini seperti sistem pos raksasa yang tidak memiliki pusat, di mana data dapat dikirim dari satu titik ke titik lain melalui berbagai jalur.
+        </p>
+        <p>
+            Bayangkan kamu ingin mengirim surat (data) ke teman di negara lain. Kamu tidak mengirimkannya langsung. Kamu memberikannya ke kantor pos lokal (router-mu), yang kemudian meneruskannya ke pusat sortir (ISP), yang kemudian mengirimkannya melalui pesawat atau truk (kabel fiber optik bawah laut) ke negara tujuan, lalu ke kantor pos lokal temanmu, dan akhirnya diantar ke rumahnya (komputernya).
+        </p>
+
+        <img src="images/global-network.jfif" alt="Visualisasi jaringan internet global">
+
+        <h3>Proses dari Awal sampai Akhir</h3>
+        <p>
+            Secara sangat sederhana, inilah yang terjadi saat kamu membuka website, misalnya <code>google.com</code>:
+        </p>
+        <ol>
+            <li>
+                <strong>Permintaan Dimulai (Browser):</strong> Kamu mengetik <code>google.com</code>. Browser-mu adalah klien yang memulai permintaan. (Dibahas di halaman <strong>Browser</strong>).
+            </li>
+            <li>
+                <strong>Pencarian Alamat (DNS):</strong> Browser-mu tidak tahu di mana "rumah" <code>google.com</code>. Ia bertanya pada "buku telepon internet" (<strong>DNS</strong>) untuk menerjemahkan nama domain itu menjadi alamat IP (misal: <code>172.217.14.228</code>).
+            </li>
+            <li>
+                <strong>Mencari "Rumah" (Hosting):</strong> Setelah tahu alamat IP-nya, browser-mu tahu harus pergi ke server mana di dunia ini. Server ini adalah layanan <strong>Hosting</strong>, tempat file-file website <code>google.com</code> disimpan.
+            </li>
+            <li>
+                <strong>Komunikasi (HTTP):</strong> Browser-mu mengirim permintaan "Tolong kirimkan saya halaman utama" menggunakan bahasa protokol <strong>HTTP</strong> (atau HTTPS yang aman).
+            </li>
+            <li>
+                <strong>Respon & Tampilan:</strong> Server Hosting mengirimkan kembali file-file (HTML, CSS, JS) sebagai respon. Browser-mu menerima file-file ini dan "merendernya" menjadi halaman web yang kamu lihat di layar.
+            </li>
+        </ol>
+        <p>
+            Semua topik ini—<strong>Browser, DNS, Hosting, HTTP, dan Domain</strong>—adalah komponen inti yang membuat internet dapat bekerja. Silakan klik menu navigasi di atas untuk mempelajari setiap bagian secara lebih rinci!
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Tugas Pemrograman Web</p>
+    </footer>
+
+</body>
+</html>

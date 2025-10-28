@@ -1,0 +1,97 @@
+/* === 1. PENGATURAN GLOBAL & BODY (VERSI DARK MODE) === */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1E1E1E;  /* Latar utama -> Hitam (Dark Gray) */
+    color: #E0E0E0;            /* Teks utama -> Putih (Light Gray) */
+    margin: 0;
+    padding: 0;
+}
+
+/* === 2. CONTAINER UTAMA === */
+/* Tidak ada yg berubah di sini, layout tetap di tengah */
+header, nav, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #0D6EFD; /* Header tetap biru sebagai aksen */
+    color: white;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Mengatur warna heading agar lebih menonjol */
+h1, h2, h3 {
+    color: #FFFFFF;
+}
+
+/* === 3. STYLING NAVIGASI === */
+nav {
+    background-color: #333; /* Warna bar navigasi (Sudah pas) */
+    padding: 0;
+    border-radius: 0 0 8px 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li a.active {
+    background-color: #0D6EFD; /* Aksen biru tetap dipakai */
+    font-weight: bold;
+}
+
+/* === 4. KONTEN UTAMA & FOOTER (VERSI DARK MODE) === */
+main {
+    background-color: #2C2C2C; /* 'Kertas' konten -> Abu-abu gelap */
+    padding: 25px;
+}
+
+footer {
+    background-color: #2C2C2C; /* Samakan dengan main */
+    text-align: center;
+    color: #AAAAAA;            /* Teks footer (lebih redup) */
+    padding-top: 20px;
+    border-top: 1px solid #444444; /* Garis pemisah (lebih gelap) */
+}
+
+/* === 5. PERBAIKAN GAMBAR & LINK === */
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Mengatur warna link di dalam konten agar terlihat jelas */
+main a {
+    color: #68B6FF; /* Biru muda agar kontras di latar gelap */
+}
+
+main a:visited {
+    color: #9FB8FF; /* Warna untuk link yg sudah dikunjungi */
+}

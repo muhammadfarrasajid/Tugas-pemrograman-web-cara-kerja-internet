@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Kerja Internet - HTTP/HTTPS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cara Kerja Internet 🌐</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda (Umum)</a></li>
+            <li><a href="http.html" class="active">HTTP & HTTPS</a></li>
+            <li><a href="domain.html">Nama Domain</a></li>
+            <li><a href="hosting.html">Hosting</a></li>
+            <li><a href="dns.html">DNS</a></li>
+            <li><a href="browser.html">Browser</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Definisi HTTP dan HTTPS</h2>
+        <p>
+            <strong>HTTP (Hypertext Transfer Protocol)</strong> adalah "bahasa" atau protokol yang digunakan oleh browser (klien) untuk berkomunikasi dengan server web. Bayangkan ini sebagai seperangkat aturan tentang bagaimana pesan permintaan (request) dan jawaban (response) harus diformat agar saling dimengerti.
+        </p>
+        <p>
+            <strong>HTTPS (Hypertext Transfer Protocol Secure)</strong> adalah versi aman dari HTTP. Ini adalah HTTP yang sama, tetapi dengan lapisan keamanan tambahan yang disebut <strong>SSL/TLS (Secure Sockets Layer/Transport Layer Security)</strong>.
+        </p>
+
+        <img src="images/http-vs-https.png" alt="Diagram perbedaan HTTP dan HTTPS">
+        <h3>Bagaimana Cara Kerjanya?</h3>
+        <p>
+            Saat kamu mengunjungi sebuah situs, proses dasarnya adalah:
+        </p>
+        <ol>
+            <li>
+                <strong>Permintaan (Request):</strong> Browser kamu (klien) mengirimkan "Permintaan HTTP" ke server. Permintaan ini bisa berupa <code>GET</code> (untuk meminta data/halaman) atau <code>POST</code> (untuk mengirim data, seperti mengisi formulir).
+            </li>
+            <li>
+                <strong>Respon (Response):</strong> Server menerima permintaan, memprosesnya, lalu mengirimkan kembali "Respon HTTP". Respon ini berisi halaman web (file HTML, CSS, JavaScript) yang kamu minta, beserta kode status (seperti <code>200 OK</code> jika berhasil, atau <code>404 Not Found</code> jika halaman tidak ada).
+            </li>
+        </ol>
+
+        <h3>Perbedaan Utama dengan HTTPS</h3>
+        <p>
+            Perbedaan utamanya adalah <strong>enkripsi</strong>.
+        </p>
+        <ul>
+            <li>
+                Pada <strong>HTTP</strong>, data dikirim sebagai teks biasa (plain text). Jika seseorang "mengintip" koneksi kamu (misalnya di Wi-Fi publik), mereka bisa membaca semua data yang kamu kirim dan terima.
+            </li>
+            <li>
+                Pada <strong>HTTPS</strong>, semua data antara browser kamu dan server dienkripsi. Ini berarti data diacak sedemikian rupa sehingga tidak ada yang bisa membacanya kecuali browser kamu dan server tujuan. Inilah mengapa kamu melihat ikon gembok di browser saat mengunjungi situs perbankan atau e-commerce.
+            </li>
+        </ul>
+
+        <h3>Sumber Referensi</h3>
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" target="_blank" rel="noopener noreferrer">
+                    Mozilla Developer Network (MDN) - An overview of HTTP
+                </a>
+            </li>
+            <li>
+                <a href="https://www.cloudflare.com/learning/ssl/what-is-https/" target="_blank" rel="noopener noreferrer">
+                    Cloudflare - What is HTTPS?
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Tugas Pemrograman Web</p>
+    </footer>
+
+</body>
+</html>

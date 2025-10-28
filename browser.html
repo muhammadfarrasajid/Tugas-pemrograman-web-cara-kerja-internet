@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Kerja Internet - Browser</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cara Kerja Internet 🌐</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda (Umum)</a></li>
+            <li><a href="http.html">HTTP & HTTPS</a></li>
+            <li><a href="domain.html">Nama Domain</a></li>
+            <li><a href="hosting.html">Hosting</a></li>
+            <li><a href="dns.html">DNS</a></li>
+            <li><a href="browser.html" class="active">Browser</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Apa itu Browser?</h2>
+        <p>
+            Browser (atau Peramban Web) adalah perangkat lunak (software) yang berfungsi untuk menerima, mengakses, dan menyajikan sumber informasi di World Wide Web. Sederhananya, ini adalah aplikasi yang kamu gunakan untuk "membuka" internet, seperti Google Chrome, Mozilla Firefox, atau Safari.
+        </p>
+
+        <img src="images/browser-work.jpg" alt="Diagram cara kerja browser">
+        <h3>Bagaimana Browser Bekerja?</h3>
+        <p>Proses kerja browser bisa disederhanakan dalam beberapa langkah:</p>
+        <ol>
+            <li>
+                <strong>Input Pengguna:</strong> Kamu mengetikkan alamat web (URL), misalnya <code>www.google.com</code>, di <em>address bar</em>.
+            </li>
+            <li>
+                <strong>Pencarian DNS:</strong> Browser tidak tahu di mana <code>google.com</code> tinggal. Ia bertanya kepada "buku telepon internet" (DNS) untuk menerjemahkan nama domain itu menjadi alamat IP (misalnya <code>172.217.14.228</code>).
+            </li>
+            <li>
+                <strong>Membuat Permintaan (Request):</strong> Setelah tahu alamat IP servernya, browser mengirimkan permintaan HTTP (HTTP Request) ke server tersebut, meminta "Tolong kirimkan saya file untuk halaman <code>google.com</code>."
+            </li>
+            <li>
+                <strong>Menerima Respon:</strong> Server Google menerima permintaan itu dan mengirimkan kembali file-file yang dibutuhkan (HTML, CSS, JavaScript) sebagai Respon HTTP (HTTP Response).
+            </li>
+            <li>
+                <strong>Rendering:</strong> Ini adalah bagian ajaibnya. Browser membaca file HTML untuk memahami struktur halaman (di mana letak judul, paragraf, gambar). Kemudian, ia membaca file CSS untuk memahami <em>styling</em> (apa warnanya, bagaimana tata letaknya). Terakhir, ia menjalankan JavaScript untuk hal-hal interaktif (seperti animasi atau <em>pop-up</em>).
+            </li>
+            <li>
+                <strong>Menampilkan Halaman:</strong> Browser "menggambar" semua elemen yang sudah di-<em>render</em> tadi ke layar kamu, sehingga kamu bisa melihat halaman web yang utuh dan interaktif.
+            </li>
+        </ol>
+
+        <h3>Sumber Referensi</h3>
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work" target="_blank" rel="noopener noreferrer">
+                    Mozilla Developer Network (MDN) - How browsers work
+                </a>
+            </li>
+            <li>
+                <a href="https://web.dev/articles/how-browsers-work" target="_blank" rel="noopener noreferrer">
+                    Google Developers - How Browsers Work
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Tugas Pemrograman Web</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Kerja Internet - Hosting</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cara Kerja Internet 🌐</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda (Umum)</a></li>
+            <li><a href="http.html">HTTP & HTTPS</a></li>
+            <li><a href="domain.html">Nama Domain</a></li>
+            <li><a href="hosting.html" class="active">Hosting</a></li>
+            <li><a href="dns.html">DNS</a></li>
+            <li><a href="browser.html">Browser</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Definisi Hosting</h2>
+        <p>
+            <strong>Web Hosting</strong> adalah layanan yang menyediakan ruang di server untuk menyimpan semua file (HTML, CSS, JavaScript, gambar, dll.) yang membentuk sebuah website.
+        </p>
+        <p>
+            Bayangkan jika Nama Domain (`google.com`) adalah <strong>alamat rumah</strong>, maka Hosting adalah <strong>lahan atau tanah</strong> tempat rumah (website) itu berdiri. Tanpa hosting, kamu punya alamat tapi tidak punya tempat untuk menaruh isi website-mu.
+        </p>
+        <p>
+            Server hosting adalah komputer fisik yang sangat kuat yang berjalan 24/7, terhubung ke internet dengan kecepatan tinggi, dan dikonfigurasi khusus untuk "menyajikan" (serve) file website kepada siapa saja yang memintanya.
+        </p>
+
+        <img src="images/web-hosting.png" alt="Ilustrasi server web hosting">
+        <h3>Bagaimana Cara Kerjanya?</h3>
+        <p>
+            Setelah browser mendapatkan alamat IP dari DNS, hosting mengambil alih:
+        </p>
+        <ol>
+            <li>
+                Browser mengirimkan permintaan HTTP ke alamat IP tersebut, yang mengarah ke server hosting spesifik.
+            </li>
+            <li>
+                Server hosting menerima permintaan itu (misalnya, "minta file `index.html`").
+            </li>
+            <li>
+                Server mencari file tersebut di dalam penyimpanannya (hard drive).
+            </li>
+            <li>
+                Setelah ditemukan, server mengirimkan file-file tersebut kembali ke browser-mu melintasi internet sebagai "Respon HTTP".
+            </li>
+            <li>
+                Browser-mu menerima file-file itu dan me-render-nya menjadi halaman web yang kamu lihat (seperti yang kita bahas di halaman 'Browser').
+            </li>
+        </ol>
+
+        <h3>Sumber Referensi</h3>
+        <ul>
+            <li>
+                <a href="https://www.cloudflare.com/learning/dns/what-is-web-hosting/" target="_blank" rel="noopener noreferrer">
+                    Cloudflare - What is web hosting?
+                </a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server" target="_blank" rel="noopener noreferrer">
+                    Mozilla Developer Network (MDN) - What is a web server?
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Tugas Pemrograman Web</p>
+    </footer>
+
+</body>
+</html>
